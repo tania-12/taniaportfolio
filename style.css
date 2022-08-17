@@ -13,11 +13,11 @@ body {
   font-family: CaviarDreams, Optima, Helvetica;
 }
 .nav-list{
-  background: white:
+  background: white;
   box-shadow: 0px,0px,10px var(--clr-gray200);
   margin: 0;
   padding: 1rem 0;
-  boreder-radius: var(--radius);
+  border-radius: var(--radius);
   display: flex;
   justify-content: flex-end;
   align-items: center;
