@@ -178,12 +178,12 @@ a:hover{
   margin-top:15px;
   font-size:15px;
   margin:10px;
-	text-align: center;
-	padding: 30px;
-	line-height: 30px;
-	box-shadow: 12px 12px 1px #BFAA8C;
+  text-align: center;
+  padding: 30px;
+  line-height: 30px;
+  box-shadow: 12px 12px 1px #BFAA8C;
   height: 250px;
-  color:white;
+  color:#BFAA8C;
   width:400px;
 }
 .flex-container2{
