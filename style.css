@@ -188,6 +188,7 @@ a:hover{
   align-items: center; 
   justify-content: center;
   transition: opacity .3s, visibility .3s;
+  pointer-event: auto;
 }
 .card:hover .job {
   visibility: visible;
