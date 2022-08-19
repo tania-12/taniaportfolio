@@ -13,6 +13,7 @@ body {
   font-family: CaviarDreams, Optima, Helvetica;
   margin: 0px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 /*Navbar*/
 .nav-list{
@@ -159,6 +160,20 @@ a:hover{
   margin:15px;
   font-size: 14px;
 }
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 0;
+  opacity: 0.7;
+  height: 100%;
+  transition: .5s ease;
+  border-radius: 20px;
+  visibility: hidden;
+}
 .card {
 	position: relative;
 	height: 200px;
@@ -180,7 +195,6 @@ a:hover{
 	right: 0;
 	color: grey;
 	opacity: 0;
-  background-color: #E8DED1;
   border-radius: 20px;
   visibility: hidden;
 	display: flex;
@@ -197,6 +211,14 @@ a:hover{
 	opacity: 1;
 }
 .description {
+  color: grey;
+	transition: .3s;
+	text-align: center;
+  margin:15px;
+  background-color: #E8DED1;
+  border-radius: 20px;
+}
+.description1 {
   color: grey;
 	transition: .3s;
 	text-align: center;
@@ -452,7 +474,25 @@ a:hover{
   .recs{
     font-size:15px;
   }
+  .overlay1{
+    visibility: visible;
+  }
+  .card:hover .overlay1 {
+    width: 100%;
+  }
+  .job{
+    visibility: hidden; 
+    opacity: 0;
+  }
+  .job:hover {
+    visibility: hidden; 
+    opacity: 0;
+  }
+  .description{
+    visibility: hidden;
+  }
 }
+
 @media (max-width: 1200px) {
   .flex-container3{
     flex-wrap: wrap;
