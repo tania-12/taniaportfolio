@@ -13,6 +13,7 @@ body {
   font-family: CaviarDreams, Optima, Helvetica;
   margin: 0px;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 /*Navbar*/
 .nav-list{
