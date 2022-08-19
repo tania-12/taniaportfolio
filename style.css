@@ -160,10 +160,10 @@ a:hover{
   font-size: 14px;
 }
 .card {
-	position: relative;
-	height: 200px;
-	width: 100%;
-	margin-bottom:10px;
+  position: relative;
+  height: 200px;
+  width: 100%;
+  margin-bottom:10px;
   background-color:#D5B895;
   text-align: center;
   display:flex;
@@ -174,37 +174,37 @@ a:hover{
 }
 
 .job {
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	color: grey;
-	opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: grey;
+  opacity: 0;
   background-color: #E8DED1;
   border-radius: 20px;
   visibility: hidden;
-	display: flex;
+  display: flex;
   position: absolute;
-	align-items: center;
-	justify-content: center;
-	transition: opacity .3s, visibility .3s;
+  align-items: center; 
+  justify-content: center;
+  transition: opacity .3s, visibility .3s;
 }
 .card:hover .job {
-	visibility: visible;
-	opacity: 0.9;
+  visibility: visible;
+  opacity: 0.9;
 }
 .job:hover {
-	opacity: 1;
+  opacity: 1;
 }
 .description {
   color: grey;
-	transition: .3s;
-	text-align: center;
+  transition: .3s;
+  text-align: center;
   margin:15px;
 }
 
 .description:hover {
-	opacity: 1;
+  opacity: 1;
 }
 .description h4{
   font-size: 20px;
@@ -222,10 +222,10 @@ a:hover{
   margin-top:15px;
   font-size:15px;
   margin:10px;
-	text-align: center;
-	padding: 30px;
-	line-height: 30px;
-	box-shadow: 10px 10px 1px #BFAA8C;
+  text-align: center;
+  padding: 30px;
+  line-height: 30px;
+  box-shadow: 10px 10px 1px #BFAA8C;
   height: 250px;
   color:#BFAA8C;
   width:400px;
