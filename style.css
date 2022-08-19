@@ -159,7 +159,7 @@ a:hover{
   justify-content: center;
   opacity:0;
 }
-.description:hover{
+.description:hover, .description:active{
   opacity: 1;
 }
 .card:hover{
@@ -326,7 +326,7 @@ a:hover{
   border-bottom:1px solid white;
 }
 
-.dropdown:hover .dropdown-item {
+.dropdown:hover .dropdown-item, dropdown:active {
   display: block;
 }
 .recDrop{
