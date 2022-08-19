@@ -395,9 +395,6 @@ a:hover{
   .flex-container2{
     flex-wrap: wrap;
   }
-  .flex-container3{
-    flex-wrap: wrap;
-  }
   .flexed-item {
     flex-basis: 44%;
     padding: 5px;
@@ -451,3 +448,8 @@ a:hover{
     font-size:15px;
   }
 }
+@media (max-width: 1200px) {
+  .flex-container3{
+    flex-wrap: wrap;
+  }
+} 
