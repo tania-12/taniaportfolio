@@ -162,7 +162,7 @@ a:hover{
 .description:hover, .description:active{
   opacity: 1;
 }
-.card:hover{
+.card:hover, .card:hover{
   background-color: white;
   color: white;
   border-radius: 25px;
@@ -405,5 +405,8 @@ a:hover{
     width: 100%;
     margin: 10px 0px;
     text-align: center;
+  }
+  .rec{
+    font-size:15px;
   }
 }
