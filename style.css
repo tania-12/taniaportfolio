@@ -66,6 +66,36 @@ body {
   text-align: center;
   border-radius: 20px;
 }
+.aboutD{
+  background-color: #D5B895;
+  border-radius: 20px ;
+  padding: 10px;
+}
+.contactCard{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  height:300px;
+}
+.contact{
+  flex-basis:40%;
+  background-color: #D5B895;
+  border-radius: 20px;
+  margin-top:15px;
+  font-size:15px;
+  margin:10px;
+  text-align: center;
+  padding: 30px;
+  line-height: 30px;
+  height: 200px;
+  color:white;
+  width:200px;
+}
+.contactSpace{
+  flex-basis:20%;
+}
 .flexed-item h6{
   margin: 10px;
   font-size: 28px;
@@ -106,16 +136,16 @@ a:hover{
   line-height: 25px;
   background-color:#BFAA8C;
   border-radius: 20px;
-  box-shadow: 12px 12px 1px #E8DED1;
+  box-shadow: 10px 10px 1px #E8DED1;
 }
 .title{
   margin: 10px;
   font-size: 30px;
 }
 .school{
-  margin: 15px;
+  margin: 10px;
   font-size: 20px;
-  line-height: 15px;
+  line-height: 20px;
 }
 .degree{
   margin: 10px;
@@ -129,44 +159,58 @@ a:hover{
   margin:15px;
   font-size: 14px;
 }
-.card{
-  background-color: #D5B895;
-  color: white;
-  margin:0px;
-  transition: 0.3s;
-  width:100%;
-  height: 40%;
+.card {
+	position: relative;
+	height: 200px;
+	width: 100%;
+	margin-bottom:10px;
+  background-color:#D5B895;
   text-align: center;
-  opacity:0.7;
-  border-radius: 25px;
-}
-.card h3{
-  position: relative;
-  margin: 10px;
-  top:75px;
-}
-.card:hover h3{
-  opacity: 0;
-}
-.description{
-  position: relative;
-  margin-top:10px;
-  margin:5px;
-  color:#D5B895;
-  font-size: 18px;
-  text-align: center;
-  display: flex;
+  display:flex;
+  align-items: center;
   justify-content: center;
-  opacity:0;
+  border-radius: 20px;
+  color:white;
 }
-.description:hover, .description:active{
-  opacity: 1;
+
+.job {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: grey;
+	opacity: 0;
+  background-color: #E8DED1;
+  border-radius: 20px;
+  visibility: hidden;
+	display: flex;
+  position: absolute;
+	align-items: center;
+	justify-content: center;
+	transition: opacity .3s, visibility .3s;
 }
-.card:hover, .card:hover{
-  background-color: white;
-  color: white;
-  border-radius: 25px;
-  opacity: 0.7;
+.card:hover .job {
+	visibility: visible;
+	opacity: 0.9;
+}
+.job:hover {
+	opacity: 1;
+}
+.description {
+  color: grey;
+	transition: .3s;
+	text-align: center;
+  margin:15px;
+}
+
+.description:hover {
+	opacity: 1;
+}
+.description h4{
+  font-size: 20px;
+}
+.description p{
+  font-size: 14px;
 }
 .skills1{
   flex-basis:20%;
@@ -178,10 +222,10 @@ a:hover{
   margin-top:15px;
   font-size:15px;
   margin:10px;
-  text-align: center;
-  padding: 30px;
-  line-height: 30px;
-  box-shadow: 12px 12px 1px #BFAA8C;
+	text-align: center;
+	padding: 30px;
+	line-height: 30px;
+	box-shadow: 10px 10px 1px #BFAA8C;
   height: 250px;
   color:#BFAA8C;
   width:400px;
@@ -192,7 +236,6 @@ a:hover{
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  
 }
 .skills ul{
   font-size:15px;
@@ -207,11 +250,9 @@ a:hover{
   margin:10px;
   border-radius: 25px;
 }
-
 .roundPic{
   border-radius: 10%;
 }
-
 .overlay {
   position: absolute;
   bottom: 0;
@@ -237,7 +278,6 @@ a:hover{
   justify-content: center;
   background-color: #E8DED1;
 }
-
 .text {
   color: white;
   font-size: 18px;
@@ -290,8 +330,8 @@ a:hover{
   text-align: center;
   padding: 30px;
   line-height: 30px;
-  box-shadow: 12px 12px 1px #E8DED1;
-  height: 250px;
+  box-shadow: 10px 10px 1px #E8DED1;
+  height: 300px;
   color:white;
   width:600px;
 }
@@ -303,21 +343,23 @@ a:hover{
 }
 .dropdown {
   left: 100%;
-    top: 0%;
-    margin-left: 0.125rem;
+  top: 0%;
+  margin-left: 0.125rem;
 }
 
 .dropdown-item {
   display: none;
   position: absolute;
-  min-width: 100%;
+  width: 270px;
+  height: 60px;
   background-color: white;
   color:#BFAA8C;
-  font-size: 20px;
+  font-size: 16px;
   opacity: 1;
+  border-radius: 10px;
+  padding: 5px;
 
 }
-
 .dropdown-item a {
   display: block;
   color: black;
@@ -326,7 +368,7 @@ a:hover{
   border-bottom:1px solid white;
 }
 
-.dropdown:hover .dropdown-item, dropdown:active {
+.dropdown:hover .dropdown-item, .dropdown:active {
   display: block;
 }
 .recDrop{
@@ -355,7 +397,6 @@ a:hover{
   }
   .flex-container3{
     flex-wrap: wrap;
-   
   }
   .flexed-item {
     flex-basis: 44%;
@@ -392,11 +433,11 @@ a:hover{
     text-align: center;
   }
   .skills ul{
-    font-size:10px;
+    font-size:15px;
     flex-basis: 50%;
+    line-height: 25px;
   }
   .skills h2{
-    font: size 10px;
     flex-basis: 50%;
   }
   .container{
